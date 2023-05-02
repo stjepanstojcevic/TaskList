@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		FA19B2CE2A01AD4F00EF6681 /* TaskList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA19B2D12A01AD4F00EF6681 /* TaskListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListApp.swift; sourceTree = "<group>"; };
-		FA19B2D32A01AD4F00EF6681 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA19B2D32A01AD4F00EF6681 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 18; };
 		FA19B2D52A01AD5100EF6681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA19B2D82A01AD5100EF6681 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA19B2DF2A01AE5D00EF6681 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };

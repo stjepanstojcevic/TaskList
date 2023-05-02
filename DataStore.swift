@@ -12,8 +12,6 @@ import Combine
 struct Task : Identifiable{
     var id = String()
     var toDoItem = String()
-    
-    
 }
 
 class TaskStore : ObservableObject{
