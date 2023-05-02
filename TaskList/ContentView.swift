@@ -6,16 +6,24 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+    @ObservedObject var taskStore = TaskStore()
+    @State var newToDo : String = ""
+    var searchBar : some View {
+        HStack{
+            TextField("Enter your task : ",text: self.$newToDo)
         }
-        .padding()
+    }
+    var body: some View {
+        NavigationView{
+            VStack{
+                List(self.taskStore.tasks){task in
+                    Text(task.toDoItem)
+                }.navigationBarTitle("Tasks")
+            }
+        }
     }
 }
 
