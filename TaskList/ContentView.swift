@@ -20,6 +20,7 @@ struct ContentView: View {
     func addNewToDo(){
         taskStore.tasks.append(Task(id:String(taskStore.tasks.count+1),toDoItem: newToDo))
         self.newToDo=""
+        print(taskStore.tasks.count)
     }
     
     var body: some View {
@@ -34,6 +35,8 @@ struct ContentView: View {
                         .onDelete(perform: self.delete)
                 }.navigationBarTitle("Todays tasks")
                 .navigationBarItems(trailing: EditButton())
+                Button(action: self.removeAll,label: {Text("Clear")})
+
             }
         }
     }
@@ -44,6 +47,10 @@ struct ContentView: View {
     func delete(at offsets : IndexSet)
     {
         taskStore.tasks.remove(atOffsets: offsets)
+    }
+    func removeAll()
+    {
+        taskStore.tasks.removeAll()
     }
 }
 
